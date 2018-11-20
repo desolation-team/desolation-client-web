@@ -1,0 +1,47 @@
+{
+  "name": "desolation-client-web",
+  "version": "1.0.0",
+  "description": "Web client for Desolation project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests\"",
+    "start:dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desolation-team/desolation-client-web.git"
+  },
+  "author": "Dzianis Reznik, Dzmitry Prudnikau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/desolation-team/desolation-client-web/issues"
+  },
+  "homepage": "https://github.com/desolation-team/desolation-client-web#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^1.0.1",
+    "eslint": "^5.9.0",
+    "eslint-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "imagemin-webp": "^4.1.0",
+    "imagemin-webpack-plugin": "^2.3.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.10.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "socket.io-client": "^2.1.1",
+    "three": "^0.98.0"
+  }
+}
