@@ -8,7 +8,7 @@ const URL = process.env.SERVER_URL || 'http://127.0.0.1:4000';
 const raycasterCenter = new THREE.Raycaster();
 const directionCenter = new THREE.Vector3(0, 0, -1);
 
-export default class Application {
+export default class ApplicationOld {
 	constructor(nickname) {
 		this.nickname = nickname;
 		this.init(nickname);

@@ -35,20 +35,24 @@ export default {
 				}
 			]
 		}, {
-			test: /\.(png|jp(e*)g|svg|gif)$/,
-			use: [{
-				loader: 'file-loader?name=/textures/[name].[ext]'
-			}]
-		}, {
-			test: /\.(mp3|wav)$/,
-			use: [{
-				loader: 'file-loader?name=/sounds/[name].[ext]'
-			}]
-		}, {
-			test: /\.md2$/,
-			use: [{
-				loader: 'file-loader?name=/models/[name].[ext]'
-			}]
+			test: /\.(mp3|wav|md2|png|jp(e*)g|svg|gif)$/,
+			exclude: /gltf/,
+			loader: 'file-loader',
+			options: {
+				name: '[path][name].[ext]'
+			}
+		},
+		{
+			test: /\.(gltf)$/,
+			loader: 'gltf-loader-2'
+
+		},
+		{
+			test: /gltf.*\.(bin|png|jpe?g|gif)$/,
+			loader: 'file-loader',
+			options: {
+				name: '[path][name].[ext]'
+			}
 		}]
 	},
 	plugins: [
